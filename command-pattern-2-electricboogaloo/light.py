@@ -1,8 +1,12 @@
 class Light:
 
+    def __init__(self, name = "light"):
+        self.name = name 
+
+    
     def on(self):
-        print("The light has been switched on")
+        print(f"The {self.name} light has been switched on")
 
 
     def off(self):
-        print("The light has been switched off")
+        print(f"The {self.name} light has been switched off")

@@ -1,5 +1,3 @@
-from command import Command
-
 class Simple_Remote_control:
 
 
