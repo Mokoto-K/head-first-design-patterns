@@ -9,3 +9,7 @@ class Lightoffcommand(Command):
 
     def execute(self):
         self.light.off()
+
+
+    def undo(self):
+        self.light.on()

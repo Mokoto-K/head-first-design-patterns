@@ -1,4 +1,3 @@
-from simple_remote_control import Simple_Remote_control
 from light import Light
 from lightoncommand import Lightoncommand
 from lightoffcommand import Lightoffcommand
@@ -26,22 +25,20 @@ remote.set_command(0, livingroom_light_on, livingroom_light_off)
 remote.set_command(1, kitchen_light_on, kitchen_light_off)
 remote.set_command(2, stereo_cd_command, stereo_off_command)
 
+
+# remote.set_command(0, lambda: livingroom_light.on(), lambda: livingroom_light.off())
+# remote.set_command(1, lambda: kitchen_light.on(), lambda: kitchen_light.off())
+# remote.set_command(2, lambda: stereo.on(), lambda: stereo.off())
+
 print(remote)
+
 
 remote.on_button_pushed(0)
 remote.off_button_pushed(0)
+remote.undo_button_pushed()
 remote.on_button_pushed(1)
 remote.off_button_pushed(1)
 remote.on_button_pushed(2)
 remote.off_button_pushed(2)
 
 
-
-
-
-# remote = Simple_Remote_control()
-# light = Light()
-# lighton = Lightoncommand(light)
-#
-# remote.set_command(lighton)
-# remote.button_was_pressed()

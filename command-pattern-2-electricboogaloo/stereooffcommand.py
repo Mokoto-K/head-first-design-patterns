@@ -9,3 +9,7 @@ class Stereooffcommand(Command):
     
     def execute(self):
         self.stereo.off()
+
+
+    def undo(self):
+        pass

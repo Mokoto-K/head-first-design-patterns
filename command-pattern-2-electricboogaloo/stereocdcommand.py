@@ -12,3 +12,5 @@ class Stereocdcommand(Command):
         self.stereo.set_volume(11)
 
     
+    def undo(self):
+        pass
